@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+nav {
+    position: fixed;
+    /* posicion fija*/
+    height: 80px;
+    /* altura definida */
+   overflow: hidden;
+     /*ocultar los contenidos que sobresalen de la caja.*/
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #f1f1f1E6;
+    width: 100%;
+}
+.logo {
+    background: url(img/logo.png) no-repeat 80% 80%;
+    /* imagen se escalará de forma que mantenga las proporciones*/
+    background-size: contain;
+    width: 180px;
+    height: 55px;
+    float: left;
+}
+
+.menu{
+    position: absolute;
+    right: 50px;
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+    /*text-transform: uppercase;*/
+}
+
+.menu a:hover{
+    color: #E85860;
+}
+
+
+
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+    /*font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;;
+    /* font-family: 'Work Sans', sans-serif;*/
+    font-family: 'Italianno', cursive;
+    padding: 20px;
+    font-size: 25px;
+    text-align: justify;
+    margin: 15px 25px;
+}
+h2{
+    font-family: 'Work Sans', sans-serif;
+    margin: 15px 25px;
+}
+@media only screen and (max-width: 550px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: rgb(201, 186, 186);
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+.trailer{
+    text-align: center;
+}
+iframe{
+    width: 100%;
+}
+h2{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.menu a:hover{
+    color: #E85860;
+}
+.imgtitulo{
+    margin-top: 80px;
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(3, 4fr);*/
+    gap: 10px;
+    background: rgb(201, 186, 186) 100%;
+    text-align: center;
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+    
+}
+
+.image {
+    flex: 0 0 calc(20% - 30px); /* Tres columnas con espacio entre imÃ¡genes */
+    margin: 5px;
+    background: rgb(201, 186, 186);
+}
+figure {
+    text-align: center;
+    padding: 10px;
+    
+}
+figcaption {
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    color: wheat;
+}
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos adicionales para hacerlo atractivo visualmente */
+.image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+section{
+    text-align: center;
+    background: rgba(157, 206, 206, 0.911) 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el campo de texto */
+}
+input[type="submit"] {
+    background-color: #fffcfc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #c73030;
+}
+footer{
+    margin-top: 30px;
+    background: whitesmoke 100%;
+    text-align: center;
+    font-size: 25px;
+}
+footer p{
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e98c8c;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type="submit"] {
+    background-color: #310abd;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4556a0;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: rgb(201, 186, 186);
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  

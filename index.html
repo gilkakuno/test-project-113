@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="boton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Lora:ital,wght@1,600&display=Bitter&display=Dancing+Script&display=Dancing+Script&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo"></div>
+    <a class="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a>
+        <div class="menu">
+            <a href="#ini">Inicio</a>
+            <a href="#tra">Trailer</a>
+            <a href="#per">Personajes</a>
+            <a href="#con">Contactos</a>
+        </div>
+  </nav>
+  <div class="imgtitulo"><img src=></div>
+  <header><img src="img/fondo.png" alt="" width="100%"></header>
+    <header></header>
+    <a name="ini"></a>
+    <h2>Inicio</h2>
+    <p>
+        "Your Name" (Kimi no Na wa) es una película de animación japonesa dirigida por Makoto Shinkai. La historia sigue
+        a dos adolescentes, Mitsuha y Taki, quienes despiertan un día en cuerpos diferentes y desconocidos. A través de
+        sueños y notas que se dejan el uno al otro, descubren que están intercambiando cuerpos de forma inexplicable.
+    </p>
+    <p>
+
+        A medida que intentan adaptarse a sus nuevas vidas intercambiadas, Mitsuha y Taki desarrollan una conexión cada
+        vez más profunda. Sin embargo, justo cuando parecen estar acercándose, un suceso trágico los separa.
+        Determinados a encontrarse de nuevo, se embarcan en una búsqueda desesperada a través del tiempo y el espacio
+        para salvarse el uno al otro.
+    </p>
+    <p>
+
+        La película combina elementos de romance, fantasía y drama, y ofrece una hermosa narrativa visual junto con una
+        banda sonora conmovedora. "Your Name" ha sido aclamada por su animación impresionante, su historia emotiva y sus
+        personajes cautivadores.
+    </p>
+    <p>
+        La película ha sido un gran éxito tanto en Japón como a nivel internacional, convirtiéndose en una de las
+        películas de anime más exitosas de todos los tiempos. Ha recibido múltiples premios y elogios por su calidad
+        artística y narrativa.
+        "Your Name" es una película que te llevará a un viaje emocional y te hará reflexionar sobre la importancia del
+        destino, los lazos interpersonales y la conexión entre dos almas destinadas a encontrarse.</p>
+
+    <a name="tra"></a>
+    <h2>Trailer</h2>
+
+    <div class="trailer"><iframe width="853" height="480" src="https://www.youtube.com/embed/qz0TDMd_cB0"
+            title="Your name. Tráiler" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></div>
+    <a name="per"></a>
+    <h2>Personajes</h2>
+    <p>Los protagonistas, Taki y Mitsuha, son dos completos desconocidos, y a pesar de eso están destinados a conocerse.
+        Durante el sueño, ambos adolescentes intercambian sus cuerpos, con resultados impredecibles en la vida de
+        ambos. Mitsuha es una joven de pueblo que anhela la emoción de la vida de la ciudad. </p>
+    
+    <a name="con"></a>
+    <h2>Contactanos</h2>
+    <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Nombres</label>
+            </div>
+            <div class="col-75">
+              <input type="text" placeholder="tu nombre" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Correo</label>
+            </div>
+            <div class="col-75">
+              <input type="email" placeholder="Correo.." />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Comentarios</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                placeholder="comentarios.."
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+
+    <script type="text/javascript">
+        $(".btn").on("click", function () {
+            $('.menu').toggleClass("show");
+        });
+    </script>
+    <footer>
+        <i class="fa-brands fa-whatsapp" style="color: rgb(201, 186, 186);"></i>
+        <i class="fab fa-facebook-square" style="color: rgb(201, 186, 186);"></i>
+        <i class="fa-brands fa-instagram" style="color: rgb(201, 186, 186);"></i>
+        <i class="fa-brands fa-pinterest" style="color: rgb(201, 186, 186)"></i>
+        <i class="fa-brands fa-tiktok" style="color: rgb(201, 186, 186)"></i>
+        <br>
+        <p>© 2023 Mi Sitio Web de Gilka Kuno. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
